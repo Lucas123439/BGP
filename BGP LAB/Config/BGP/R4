@@ -1,1 +1,18 @@
+router bgp 65003
+ bgp log-neighbor-changes
 
+ !
+ ! R3 - eBGP
+ !
+ neighbor 3.3.3.3 remote-as 65002
+ neighbor 3.3.3.3 update-source Loopback0
+ neighbor 3.3.3.3 ebgp-multihop 2
+
+ !
+ ! Advertise R4 networks
+ !
+ network 4.4.4.4 mask 255.255.255.255
+ network 172.16.40.0 mask 255.255.255.0
+ network 10.34.34.0 mask 255.255.255.0
+ exit
+ end
