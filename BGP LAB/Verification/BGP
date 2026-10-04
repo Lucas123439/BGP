@@ -5,3 +5,10 @@
 ```cisco
 show ip bgp summary
 show ip bgp neighbors
+
+
+#Route Verification
+
+show ip bgp
+show ip route bgp
+show ip bgp <network>
