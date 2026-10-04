@@ -1,1 +1,9 @@
+# OSPF Verification
 
+## OSPF Neighbor Verification
+
+Use the following commands to verify OSPF neighbor relationships.
+
+```cisco
+show ip ospf neighbor
+show ip ospf neighbor detail
