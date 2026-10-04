@@ -1,0 +1,7 @@
+# BGP Verification
+
+## BGP Neighbor Verification
+
+```cisco
+show ip bgp summary
+show ip bgp neighbors
